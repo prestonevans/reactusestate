@@ -12,13 +12,20 @@ export default function UseStateEx2() {
     function clearItems() {
         setPerson([])
     }
+    function removePerson(id:number) {
+        setPerson(person.filter(person => person.id !== id))
+    }
+
     return (
         <>
             <ol>
                 {person.map(person => {
                     const { id, name } = person
                     return (
+                        <>
                             <li key={id}>{name}</li>
+                            <button onClick={()=>removePerson(id)}>Remove</button>
+                        </>
                     ) 
                 })}
             </ol>
