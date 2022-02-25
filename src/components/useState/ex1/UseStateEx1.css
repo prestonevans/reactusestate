@@ -1,0 +1,23 @@
+button {
+    font-size: 2rem;
+    padding: .5em 2em;
+    border: none;
+    background-color: cadetblue;
+    color: white;
+    border-radius: 2em;
+    transition: .1s ease-in;
+  }
+  button:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 5px 0px rgba(0, 0, 0, 0.194);
+  }
+  button:active {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.194);
+  }
+  h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 100;
+  }

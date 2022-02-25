@@ -1,5 +1,9 @@
 import './App.css';
-import Example from './components/useState/ex1/UseStateEx1'
+// ex. 1
+// import Example from './components/useState/ex1/UseStateEx1'
+
+// ex.2
+import Example from './components/useState/ex2/UseStateEx2'
 
 
 function App() {

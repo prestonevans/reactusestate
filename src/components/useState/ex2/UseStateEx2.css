@@ -1,0 +1,7 @@
+li:not(:last-child) {
+    margin-bottom: 1em;
+}
+li {
+    font-size: 2rem;
+    font-weight: 100;
+}

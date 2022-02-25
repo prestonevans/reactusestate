@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { randomTitle } from '../../../data/data'
+import './UseStateEx1.css'
 
 export default function UseStateEx1() {
     const [ title, setTitle ] = useState('useState error example')
