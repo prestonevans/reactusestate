@@ -23,8 +23,10 @@ export default function UseStateEx2() {
                     const { id, name } = person
                     return (
                         <>
-                            <li key={id}>{name}</li>
-                            <button onClick={()=>removePerson(id)}>Remove</button>
+                            <li key={id}>{name}
+                                <button onClick={()=>removePerson(id)}>Remove</button>
+                            </li>
+                            
                         </>
                     ) 
                 })}
