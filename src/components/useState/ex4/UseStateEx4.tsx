@@ -11,11 +11,15 @@ export default function UseStateEx4() {
         if(count === 0) return
         setCount(count - 1)
     }
+    function resetHandler() {
+        setCount(0)
+    }
     return (
         <>
             <span onClick={addHandler}>+</span>
             <span>{count}</span>
             <span onClick={subtractHandler}>-</span>
+            <button onClick={resetHandler} disabled={count === 0}>Reset</button>
         </>
     )
 }
