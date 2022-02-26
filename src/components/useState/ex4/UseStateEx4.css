@@ -1,0 +1,16 @@
+span:not(:nth-child(2)) {
+    height: 100px;
+    width: 100px;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 4rem;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+}
+span:nth-child(2) {
+    font-size: 4rem;
+}
