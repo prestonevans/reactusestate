@@ -9,7 +9,13 @@ import './App.css';
 // import Example from './components/useState/ex3/UseStateEx3'
 
 // ex. 4
-import Example from './components/useState/ex4/UseStateEx4'
+// import Example from './components/useState/ex4/UseStateEx4'
+
+
+// UseEffect
+// ex. 1
+
+import Example from './components/useEffect/ex1/UseEffectEx1'
 
 function App() {
   return (
