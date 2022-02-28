@@ -18,18 +18,21 @@ export default function UseEffectEx1() {
     // )
     const [message, setMessage] = useState('You are the best!')
     const [loading, setLoading] = useState(false)
-    useEffect(()=> {
-        setLoading(true)
-        setTimeout(() => {
-            setLoading(false)
-        }, 2000);
-    },[message])
+
 
     function changeMessageHandler() {
         if(message === 'You are the best!') {
             setMessage('Questionable...')
+            setLoading(true)
+            setTimeout(() => {
+                setLoading(false)
+        }, 2000);
         }   else {
             setMessage('You are the best!')
+            setLoading(true)
+            setTimeout(() => {
+                setLoading(false)
+        }, 2000);
         }
     }
     return (
