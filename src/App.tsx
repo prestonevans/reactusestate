@@ -15,7 +15,10 @@ import './App.css';
 // UseEffect
 // ex. 1
 
-import Example from './components/useEffect/ex1/UseEffectEx1'
+// import Example from './components/useEffect/ex1/UseEffectEx1'
+
+// ex. 2
+import Example from './components/useEffect/ex2/UseEffectEx2'
 
 function App() {
   return (
