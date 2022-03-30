@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import Joke from '../Joke';
-import { jokes } from '../jokes';
+import Joke from './Joke';
+import { jokes } from './jokes';
 import './UseEffectEx1.css';
 
 export default function UseEffectEx1() {
@@ -10,14 +10,16 @@ export default function UseEffectEx1() {
       alert('sup')
    }
   useEffect(() => {
+    document.title = 'loading'
     async function getData() {
       const data = await fetch('https://opentdb.com/api.php?amount=10');
       const { results: joke } = await data.json();
       setJokes(joke);
+      document.title = 'Jokes'
     }
     getData();
   }, []);
-  return jokes.length === 0 ? <p>loading</p> : <Joke onCancel={() => {handleCancel()}} jokes={jokes} />;
+  return jokes.length === 0 ? <p>loading</p> : <Joke onCancel={handleCancel} jokes={jokes} />;
 }
 
 
