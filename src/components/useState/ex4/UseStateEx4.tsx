@@ -16,9 +16,9 @@ export default function UseStateEx4() {
     }
     return (
         <>
-            <span onClick={addHandler}>+</span>
+            <button className='counter' onClick={addHandler}>+</button>
             <span>{count}</span>
-            <span onClick={subtractHandler}>-</span>
+            <button className='counter' onClick={subtractHandler} disabled={count === 0}>-</button>
             <button onClick={resetHandler} disabled={count === 0}>Reset</button>
         </>
     )
